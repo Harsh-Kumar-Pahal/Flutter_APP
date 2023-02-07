@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "587605013612",
+    "project_id": "language-learn-app-7900f",
+    "storage_bucket": "language-learn-app-7900f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:587605013612:android:c5c358d7858a3fc1139449",
+        "android_client_info": {
+          "package_name": "com.example.music_player"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "587605013612-r539ga3k7199e5ng4v43ci3uk1htuhst.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdYnGLcLJUIushD86KFEwZaNKkc6tPDuU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "587605013612-r539ga3k7199e5ng4v43ci3uk1htuhst.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
