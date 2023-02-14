@@ -1,10 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_core/firebase_core.dart';
-
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
-import 'package:fluttertoast/fluttertoast.dart';
-import 'package:music_player/home.dart';
 import 'package:music_player/neu_button.dart';
 
 class login extends StatefulWidget{
@@ -15,15 +11,10 @@ class login extends StatefulWidget{
 
 class _loginState extends State<login>{
   final database = FirebaseDatabase.instance.reference();
-  final email = new TextEditingController();
-  final password = new TextEditingController();
+  final email = TextEditingController();
+  final password = TextEditingController();
   final GlobalKey <FormState> _key = GlobalKey<FormState>();
 
-  // Future signIn() async {
-  //   await FirebaseAuth.instance.signInWithEmailAndPassword(
-  //     email: email.text.trim(), 
-  //     password: password.text.trim());
-  // }
 
 
 
@@ -37,7 +28,7 @@ class _loginState extends State<login>{
       appBar: AppBar(title: Text("Login"),backgroundColor: Colors.purple[800],),
       body: Form(
         key: _key,
-        child: Center(
+        child: SingleChildScrollView(child: Center(
           child: Column(
             children: [
               Text(""),
@@ -71,10 +62,12 @@ class _loginState extends State<login>{
               Text(""),
               GestureDetector(
                 onTap:() async{
+                  
                   if (_key.currentState!.validate()){
                   await FirebaseAuth.instance.signInWithEmailAndPassword(
                     email: email.text.trim(), 
                     password: password.text.trim());
+
                   }
                   
       
@@ -86,7 +79,7 @@ class _loginState extends State<login>{
               )
             ],
           ),
-        ),
+        ))
       ),
      ),
      debugShowCheckedModeBanner: false,);

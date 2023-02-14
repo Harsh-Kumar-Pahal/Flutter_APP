@@ -26,7 +26,7 @@ String translated = "Translation";
     return MaterialApp(home:
      Scaffold(
       backgroundColor: Colors.grey[300],
-      appBar: AppBar(title: Text("Translate..."), backgroundColor: Colors.pink),
+      appBar: AppBar(title: const Text("Translate..."), backgroundColor: Colors.pink),
       body: ListView(
         children: [Center(child: Column(
           children: [
@@ -35,15 +35,16 @@ String translated = "Translation";
               width: 60,
               child: neu_button(child: GestureDetector(
                 onHorizontalDragStart: (details) => Navigator.push(context, MaterialPageRoute(builder: (context)=>french())),
-              child: Icon(Icons.arrow_back_ios_new),
+              child: const Icon(Icons.arrow_back_ios_new),
             ))),
             Text(""),
 
 
-            Text("English (US)", style: TextStyle(fontSize: 30, color: Colors.purple[900]),),
+            Text("English (US)", style:
+             TextStyle(fontSize: 30, color: Colors.purple[900]),),
             TextField(
-              style: TextStyle(fontSize: 30),
-              decoration: InputDecoration(
+              style: const TextStyle(fontSize: 30),
+              decoration: const InputDecoration(
                 hintText: "Enter Text",
                 hintStyle: TextStyle(color: Colors.cyan)
               ),

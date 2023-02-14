@@ -23,8 +23,12 @@ class home extends StatelessWidget{
   Widget build(BuildContext context){
   return  MaterialApp(home:
    Scaffold(
-    backgroundColor: Colors.purple[100],
-    appBar:  AppBar(title: Text("LEARN-LANGUAGE", style: TextStyle(fontSize: 30)), backgroundColor: Colors.purple,actions: [IconButton(onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>settings()));}, icon: Icon(Icons.settings))],),
+    backgroundColor: Colors.grey[300],
+    appBar:  AppBar(title: Text("LEARN-LANGUAGE", style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold, color: Colors.white)), backgroundColor: Colors.purple[400],
+    actions: [IconButton(
+    onPressed:()
+    {Navigator.push(context, MaterialPageRoute(builder: (context)=>settings()));},
+    icon: Icon(Icons.person_rounded, size: 30,))],),
     body: ListView(
       children: [
         Center(
@@ -32,14 +36,14 @@ class home extends StatelessWidget{
             children: [
               Text(""),
               Wrap(
-                spacing:40,
-                runSpacing: 40,
+                spacing:70,
+                runSpacing: 30,
                 children: [
                   GestureDetector(
                     onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context)=>hindi())),
                     child: SizedBox(
-                      height: 100,
-                      width: 100,
+                      height: 110,
+                      width: 120,
                       child: neu_button(child: Image.asset("assets/india.png")),
                     ),
                   ),
@@ -47,8 +51,8 @@ class home extends StatelessWidget{
                 GestureDetector(
                     onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context)=>french())),
                     child: SizedBox(
-                      height: 100,
-                      width: 100,
+                      height: 110,
+                      width: 120,
                       child: neu_button(child: Image.asset("assets/ff.png")),
                     ),
                   ),
@@ -56,8 +60,8 @@ class home extends StatelessWidget{
                   GestureDetector(
                     onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context)=>germany())),
                     child: SizedBox(
-                      height: 100,
-                      width: 100,
+                      height: 110,
+                      width: 120,
                       child: neu_button(child: Image.asset("assets/gf.png")),
                     ),
                   ),
@@ -65,17 +69,17 @@ class home extends StatelessWidget{
                   GestureDetector(
                     onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context)=>spain())),
                     child: SizedBox(
-                      height: 100,
-                      width: 100,
-                      child: neu_button(child: Image.asset("assets/sf.png")),
+                      height: 110,
+                      width: 120,
+                      child: neu_button(child: Image.asset("assets/sf.png", scale: 1,)),
                     ),
                   ),
 
                   GestureDetector(
                     onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context)=>russian())),
                     child: SizedBox(
-                      height: 100,
-                      width: 100,
+                      height: 110,
+                      width: 120,
                       child: neu_button(child: Image.asset("assets/rf.png")),
                     ),
                   ),
@@ -83,8 +87,8 @@ class home extends StatelessWidget{
                   GestureDetector(
                     onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context)=>italy())),
                     child: SizedBox(
-                      height: 100,
-                      width: 100,
+                      height: 110,
+                      width: 120,
                       child: neu_button(child: Image.asset("assets/if.png")),
                     ),
                   ),],
@@ -99,7 +103,7 @@ class home extends StatelessWidget{
              
 
               Text(""),
-              Text("Languages you can Learn...", style: TextStyle(fontSize: 30, color: Colors.purple)),
+              Text("Languages you can Learn...", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold, color: Colors.purple)),
               Text(""),
               Text(""),
 

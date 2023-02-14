@@ -45,84 +45,84 @@ class hmusic extends StatelessWidget{
                   runSpacing: 20,
                   children: [
                     GestureDetector(
-                      onTap:() => player.play(AssetSource('fm1.mp3')),
+                      onTap:() => player.play(AssetSource('Besharam-Rang--From-Pathaan--Shilpa-Rao-Caralisa-Monteiro-Vishal-Dadlani-Shekhar-Ravjiani.mp3')),
                       child: SizedBox(
                         height: 90,
                         width: 400,
-                        child: neu_button(child: Row(children: [Image.asset("assets/music.png"), Text("WANJA-You-are-mine",style: TextStyle(fontSize: 26, color: Colors.pink),)],)),),
+                        child: neu_button(child: Row(children: [Image.asset("assets/h1.jpg"), Text("Besharam-Rang",style: TextStyle(fontSize: 30, color: Colors.pink),)],)),),
                     ),
 
                   GestureDetector(
-                    onTap:() => player.play(AssetSource('fm2.mp3')),
+                    onTap:() => player.play(AssetSource('Hum-Hindustani-Lata-Mangeshkar-Amitabh-Bachchan-Padmini-Kolhapure-Shraddha-Kapoor-Sonakshi-Sinha-Tara-Sutaria-Shruti-Haasan-Jannat-Zubair-Rahmani-Sonu-Nigam-Kailash-Kher-Alka-Yagnik-Shabbir-Kumar-Ankit-Tiwari-Siddhanth-Kapoor-Anil-Agarwal.mp3')),
                       child: SizedBox(
                         height: 90,
                         width: 400,
-                        child: neu_button(child: Row(children: [Image.asset("assets/music.png"), Text("Trailblazer-Trailblazer-ENO-official-audio",style: TextStyle(fontSize: 15, color: Colors.pink),)],)),),
+                        child: neu_button(child: Row(children: [Image.asset("assets/music.png"), Text("Hum-Hindustani",style: TextStyle(fontSize: 30, color: Colors.pink),)],)),),
                     ),
 
                   GestureDetector(
-                    onTap:() => player.play(AssetSource('fm3.mp3')),
+                    onTap:() => player.play(AssetSource('Main-Khiladi--From-Selfiee--Tanishk-Bagchi-Abhijeet-Udit-Narayan.mp3')),
                       child: SizedBox(
                         height: 90,
                         width: 400,
-                        child: neu_button(child: Row(children: [Image.asset("assets/music.png"), Text("Spha-Bembe-Wamuhle-Trumpet-Inter-SA",style: TextStyle(fontSize: 15, color: Colors.pink),)],)),),
+                        child: neu_button(child: Row(children: [Image.asset("assets/h3.jpg"), Text("Main-Khiladi",style: TextStyle(fontSize: 30, color: Colors.pink),)],)),),
                     ),
 
                   GestureDetector(
-                    onTap:() => player.play(AssetSource('fm4.mp3')),
+                    onTap:() => player.play(AssetSource('Munda-Sona-Hoon-Main--From-Shehzada--Pritam-Diljit-Dosanjh-Nikhita-Gandhi-Kumaar.mp3')),
                       child: SizedBox(
                         height: 90,
                         width: 400,
-                        child: neu_button(child: Row(children: [Image.asset("assets/music.png"), Text("SAMTANA-K-RASHIDI-MCA",style: TextStyle(fontSize: 23, color: Colors.pink),)],)),),
+                        child: neu_button(child: Row(children: [Image.asset("assets/h4.jpg"), Text("Munda-Sona-Hoon-Main",style: TextStyle(fontSize: 25, color: Colors.pink),)],)),),
                     ),
 
                   GestureDetector(
-                    onTap:() => player.play(AssetSource('fm5.mp3')),
+                    onTap:() => player.play(AssetSource('Saath-Hum-Rahein--From-Drishyam-2--Amitabh-Bhattacharya-Devi-Sri-Prasad-Jubin-Nautiyal.mp3')),
                       child: SizedBox(
                         height: 90,
                         width: 400,
-                        child: neu_button(child: Row(children: [Image.asset("assets/music.png"), Text("QUADTUNE-BEATS-afro-BONGO-INSTRUMENTAL-2022",style: TextStyle(fontSize: 10, color: Colors.pink),)],)),),
+                        child: neu_button(child: Row(children: [Image.asset("assets/h5.jpg"), Text("Saath-Hum-Rahein",style: TextStyle(fontSize: 30, color: Colors.pink),)],)),),
                     ),
 
                   GestureDetector(
-                    onTap:() => player.play(AssetSource('fm6.mp3')),
+                    onTap:() => player.play(AssetSource('Tere-Pyaar-Mein-Pritam-Arijit-Singh-Nikhita-Gandhi-Amitabh-Bhattacharya.mp3')),
                       child: SizedBox(
                         height: 90,
                         width: 400,
-                        child: neu_button(child: Row(children: [Image.asset("assets/music.png"), Text("Patrick-ngugi-Thi-ino-ituragwo",style: TextStyle(fontSize: 20, color: Colors.pink),)],)),),
+                        child: neu_button(child: Row(children: [Image.asset("assets/h6.jpg"), Text("Tere-Pyaar-Mein",style: TextStyle(fontSize: 30, color: Colors.pink),)],)),),
                     ),
 
                   GestureDetector(
-                    onTap:() => player.play(AssetSource('fm7.mp3')),
+                    onTap:() => player.play(AssetSource('Kesariya.mp3')),
                       child: SizedBox(
                         height: 90,
                         width: 400,
-                        child: neu_button(child: Row(children: [Image.asset("assets/music.png"), Text("Kartel-Rimes-YOP-NIANGON",style: TextStyle(fontSize: 20, color: Colors.pink),)],)),),
+                        child: neu_button(child: Row(children: [Image.asset("assets/h7.jpg"), Text("Kesariya",style: TextStyle(fontSize: 30, color: Colors.pink),)],)),),
                     ),
 
-                  GestureDetector(
-                    onTap:() => player.play(AssetSource('fm8.mp3')),
-                      child: SizedBox(
-                        height: 90,
-                        width: 400,
-                        child: neu_button(child: Row(children: [Image.asset("assets/music.png"), Text("Ilya-Truhanov-French-Waltz",style: TextStyle(fontSize: 23, color: Colors.pink),)],)),),
-                    ),
+                  // GestureDetector(
+                  //   onTap:() => player.play(AssetSource('fm8.mp3')),
+                  //     child: SizedBox(
+                  //       height: 90,
+                  //       width: 400,
+                  //       child: neu_button(child: Row(children: [Image.asset("assets/music.png"), Text("Ilya-Truhanov-French-Waltz",style: TextStyle(fontSize: 23, color: Colors.pink),)],)),),
+                  //   ),
 
-                  GestureDetector(
-                    onTap:() => player.play(AssetSource('fm9.mp3')),
-                      child: SizedBox(
-                        height: 90,
-                        width: 400,
-                        child: neu_button(child: Row(children: [Image.asset("assets/music.png"), Text("GALAXY-BEATS-Rnb-Classic-Beat-Instrumental-Centre",style: TextStyle(fontSize: 11, color: Colors.pink),)],)),),
-                    ),
+                  // GestureDetector(
+                  //   onTap:() => player.play(AssetSource('fm9.mp3')),
+                  //     child: SizedBox(
+                  //       height: 90,
+                  //       width: 400,
+                  //       child: neu_button(child: Row(children: [Image.asset("assets/music.png"), Text("GALAXY-BEATS-Rnb-Classic-Beat-Instrumental-Centre",style: TextStyle(fontSize: 11, color: Colors.pink),)],)),),
+                  //   ),
 
-                  GestureDetector(
-                    onTap:() => player.play(AssetSource('fm10.mp3')),
-                      child: SizedBox(
-                        height: 90,
-                        width: 400,
-                        child: neu_button(child: Row(children: [Image.asset("assets/music.png"), Text("Andre-Mario-Smith-Darkroads-Part-Seven",style: TextStyle(fontSize: 15, color: Colors.pink),)],)),),
-                    ),
+                  // GestureDetector(
+                  //   onTap:() => player.play(AssetSource('fm10.mp3')),
+                  //     child: SizedBox(
+                  //       height: 90,
+                  //       width: 400,
+                  //       child: neu_button(child: Row(children: [Image.asset("assets/music.png"), Text("Andre-Mario-Smith-Darkroads-Part-Seven",style: TextStyle(fontSize: 15, color: Colors.pink),)],)),),
+                  //   ),
 
 
                    

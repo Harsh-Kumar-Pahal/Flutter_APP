@@ -54,7 +54,7 @@ class _audioState extends State<audio>{
   Widget build(BuildContext context){
     return MaterialApp( debugShowCheckedModeBanner: false,
     home: Scaffold(
-      backgroundColor: Colors.lightBlue[100],
+      backgroundColor: Colors.grey[300],
 
       appBar: AppBar(title:  Text("FRENCH", style: TextStyle(fontSize: 30),), backgroundColor: Colors.lightBlue[900],),
 

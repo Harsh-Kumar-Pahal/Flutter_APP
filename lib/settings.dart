@@ -8,23 +8,37 @@ class settings extends StatelessWidget{
   Widget build(BuildContext context){
     return MaterialApp(home: 
     Scaffold(
-      appBar: AppBar(title: Text("settings"),backgroundColor: Colors.purple,),
+      appBar: AppBar(title: Text("Profile", style: TextStyle(fontSize: 40,color: Colors.teal[500]),),backgroundColor: Colors.amber[200],),
       body: Center(child: 
       Column(
         children: [
           IconButton(onPressed: (){
             Navigator.push(context, MaterialPageRoute(builder: (context)=>home()));
-          }, icon: Icon(Icons.arrow_back,size: 30, color: Colors.purple,)),
+          }, icon: Icon(Icons.arrow_back,size: 30, color: Colors.teal[500],)),
           Text(""),
-          Text('Signed as: user.email' + user.email!, style: TextStyle(fontSize: 18, color: Colors.pink),),
+
+
+          Image.asset("assets/user.png", scale: 3,),
+          
+
+          Text(""),
+          Text('' + user.email!, style: TextStyle(fontSize: 30, color: Colors.teal[500]),),
+          
 
           ElevatedButton(
-            style: ElevatedButton.styleFrom(backgroundColor: Colors.purple),
+            style: ElevatedButton.styleFrom(backgroundColor: Colors.amber[200]),
             onPressed: (){
               FirebaseAuth.instance.signOut();
-              Navigator.push(context, MaterialPageRoute(builder: (context) => login()));
+              Navigator.push(context,
+               MaterialPageRoute(builder: (context) => login()));
             },
-           child: Text("Sign Out"))
+           child: Wrap(
+            spacing: 6,
+
+            children: [
+            Icon(Icons.delete,color: Colors.red,),
+            
+            Text("Delete account",style: TextStyle(fontSize: 20, color: Colors.red),)],))
         ],
       ),),
     ),debugShowCheckedModeBanner: false,);
